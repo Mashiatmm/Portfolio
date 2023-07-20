@@ -158,6 +158,9 @@ html { font-family: var(--ff-poppins); }
 body { background: var(--smoky-black); }
 
 
+ /* Using for slideshows */
+
+
 
 
 
@@ -241,6 +244,7 @@ article.active {
 
 .article-title {
   position: relative;
+  padding-top: 10vh;
   padding-bottom: 7px;
 }
 
@@ -512,7 +516,7 @@ main {
  * #service 
  */
 
-.service { margin-bottom: 35px; }
+.service {margin-top: 35px; margin-bottom: 35px; }
 
 .service-title { margin-bottom: 20px; }
 

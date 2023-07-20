@@ -72,7 +72,7 @@
   @media (max-width: 768px) {
     /* Adjust the image size for small screens */
     slideshow_image {
-        max-width: 90%; /* Reduce image size for better fit */
+        max-width: 50%; /* Reduce image size for better fit */
     }
 }
   

@@ -1,9 +1,12 @@
 let slideIndex = 1;
+let slidelength = 0;
 showSlides(slideIndex);
+startSlideshow();
 
 // Next/previous controls
 function plusSlides(n) {
-  showSlides(slideIndex += n);
+ 
+  showSlides(slideIndex += n );
 }
 
 // Thumbnail image controls
@@ -14,6 +17,7 @@ function currentSlide(n) {
 function showSlides(n) {
   let i;
   let slides = document.getElementsByClassName("mySlides");
+  slidelength = slides.length;
 //   let dots = document.getElementsByClassName("demo");
 //   let captionText = document.getElementById("caption");
   if (n > slides.length) {slideIndex = 1}
@@ -25,6 +29,21 @@ function showSlides(n) {
 //     dots[i].className = dots[i].className.replace(" active", "");
 //   }
   slides[slideIndex-1].style.display = "block";
+
+  
 //   dots[slideIndex-1].className += " active";
 //   captionText.innerHTML = dots[slideIndex-1].alt;
+}
+
+function startSlideshow(){
+  setInterval(function () {
+    // console.log("Index : ", slideIndex);
+    // console.log("slidelength : ", slidelength);
+    plusSlides(1); // Change to the next slide every 3 seconds
+    if (slideIndex == slidelength){
+      slideIndex = 0;
+      // showSlides(slideIndex);
+      // console.log("here : ", slideIndex);
+    }
+  }, 5000); // 3000 milliseconds = 3 seconds
 }

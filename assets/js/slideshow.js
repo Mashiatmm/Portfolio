@@ -47,3 +47,6 @@ function startSlideshow(){
     }
   }, 5000); // 3000 milliseconds = 3 seconds
 }
+
+
+

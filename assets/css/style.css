@@ -635,8 +635,9 @@ article.active {
 }
 
 .info-content .title {
-  color: var(--white-1);
-  background: var(--onyx);
+  /* color: var(--white-1); */
+  background-color: gold;
+  /* background: var(--onyx); */
   font-size: var(--fs-8);
   font-weight: var(--fw-300);
   width: max-content;
@@ -2231,7 +2232,7 @@ textarea.form-input::-webkit-resizer { display: none; }
     max-height: max-content;
     height: 100%;
     margin-bottom: 0;
-    padding-top: 60px;
+    /* padding-top: 60px; */
     z-index: 1;
   }
 

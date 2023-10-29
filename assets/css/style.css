@@ -1416,12 +1416,19 @@ article.active {
   gap: 20px;
 }
 
+.blog-post-item {
+  border: 1px solid var(--jet); 
+  border-radius : 16px;
+  /* border-radius: 12px 12px 0 0;  */
+}
+
 .blog-post-item > a {
   position: relative;
   background: var(--border-gradient-onyx);
   height: 100%;
   box-shadow: var(--shadow-4);
   border-radius: 16px;
+ 
   z-index: 1;
 }
 
